@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Core\\Course.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Core\\Course.Core.csproj",
       "projectName": "Course.Core",
-      "projectPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Core\\Course.Core.csproj",
+      "projectPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Core\\Course.Core.csproj",
       "packagesPath": "C:\\Users\\Khalid Suleymanov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Core\\obj\\",
+      "outputPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Khalid Suleymanov\\AppData\\Roaming\\NuGet\\NuGet.Config",

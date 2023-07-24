@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Data\\Course.Data.csproj": {}
+    "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Data\\Course.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Core\\Course.Core.csproj": {
+    "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Core\\Course.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Core\\Course.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Core\\Course.Core.csproj",
         "projectName": "Course.Core",
-        "projectPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Core\\Course.Core.csproj",
+        "projectPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Core\\Course.Core.csproj",
         "packagesPath": "C:\\Users\\Khalid Suleymanov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Core\\obj\\",
+        "outputPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Khalid Suleymanov\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Data\\Course.Data.csproj": {
+    "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Data\\Course.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Data\\Course.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Data\\Course.Data.csproj",
         "projectName": "Course.Data",
-        "projectPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Data\\Course.Data.csproj",
+        "projectPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Data\\Course.Data.csproj",
         "packagesPath": "C:\\Users\\Khalid Suleymanov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Data\\obj\\",
+        "outputPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Khalid Suleymanov\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Core\\Course.Core.csproj": {
-                "projectPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Core\\Course.Core.csproj"
+              "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Core\\Course.Core.csproj": {
+                "projectPath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Core\\Course.Core.csproj"
               }
             }
           }

@@ -14,7 +14,7 @@ namespace Course.Data.Configurations
         public void Configure(EntityTypeBuilder<Student> builder)
         {
             builder.Property(x => x.FullName).IsRequired().HasMaxLength(100);
-            builder.Property(x => x.Point).HasColumnType("point");
+            builder.Property(x => x.Point).HasColumnType("decimal");
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Course.Core.Entities
     public class Student:BaseEntity
     {
         public string FullName { get; set; }
-        public byte Point { get; set; }
+        public decimal Point { get; set; }
         public int GroupId { get; set; }
         public Group Group { get; set; }
     }

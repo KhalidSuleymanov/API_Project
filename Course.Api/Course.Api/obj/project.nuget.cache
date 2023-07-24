@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4CPCIU95bWdNhDlBZuWilkBORxexBQwQ4OVekMN5BNYZRFssvjrngPGmDS+zwaqyYp7JZH5tjOhH8Gs2sgyyTA==",
+  "dgSpecHash": "z9x0qaGKD71dDBjhBVHSLPDV5s+99guJ2Wih4DtMGM07ofrbuCPR3BvzgynysOrKbitn8EcdCMVZa5+eSKeNZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\Course.Api\\Course.Api\\Course.Api.csproj",
+  "projectFilePath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Api\\Course.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Khalid Suleymanov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Khalid Suleymanov\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
