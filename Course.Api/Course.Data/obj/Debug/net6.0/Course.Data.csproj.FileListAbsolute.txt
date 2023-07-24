@@ -1,0 +1,17 @@
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\bin\Debug\net6.0\Course.Data.deps.json
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\bin\Debug\net6.0\Course.Data.runtimeconfig.json
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\bin\Debug\net6.0\Course.Data.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\bin\Debug\net6.0\Course.Data.pdb
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\bin\Debug\net6.0\Course.Core.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\bin\Debug\net6.0\Course.Core.pdb
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\obj\Debug\net6.0\Course.Data.csproj.AssemblyReference.cache
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\obj\Debug\net6.0\Course.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\obj\Debug\net6.0\Course.Data.AssemblyInfoInputs.cache
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\obj\Debug\net6.0\Course.Data.AssemblyInfo.cs
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\obj\Debug\net6.0\Course.Data.csproj.CoreCompileInputs.cache
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\obj\Debug\net6.0\Course.Data.csproj.CopyComplete
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\obj\Debug\net6.0\Course.Data.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\obj\Debug\net6.0\refint\Course.Data.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\obj\Debug\net6.0\Course.Data.pdb
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\obj\Debug\net6.0\Course.Data.genruntimeconfig.cache
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Data\obj\Debug\net6.0\ref\Course.Data.dll

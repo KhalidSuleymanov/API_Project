@@ -1,0 +1,12 @@
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\bin\Debug\net6.0\Course.Core.deps.json
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\bin\Debug\net6.0\Course.Core.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\bin\Debug\net6.0\Course.Core.pdb
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\obj\Debug\net6.0\Course.Core.csproj.AssemblyReference.cache
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\obj\Debug\net6.0\Course.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\obj\Debug\net6.0\Course.Core.AssemblyInfoInputs.cache
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\obj\Debug\net6.0\Course.Core.AssemblyInfo.cs
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\obj\Debug\net6.0\Course.Core.csproj.CoreCompileInputs.cache
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\obj\Debug\net6.0\Course.Core.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\obj\Debug\net6.0\refint\Course.Core.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\obj\Debug\net6.0\Course.Core.pdb
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\Course.Api\Course.Core\obj\Debug\net6.0\ref\Course.Core.dll
