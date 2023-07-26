@@ -1,6 +1,6 @@
-﻿using Course.Api.Dtos.StudentDtos;
-using Course.Core.Entities;
+﻿using Course.Core.Entities;
 using Course.Core.Repositories;
+using Course.Service.Dtos.StudentDtos;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

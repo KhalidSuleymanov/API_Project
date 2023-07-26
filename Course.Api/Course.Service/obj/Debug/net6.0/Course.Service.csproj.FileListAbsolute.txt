@@ -1,0 +1,17 @@
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\bin\Debug\net6.0\Course.Service.deps.json
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\bin\Debug\net6.0\Course.Service.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\bin\Debug\net6.0\Course.Service.pdb
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\obj\Debug\net6.0\Course.Service.csproj.AssemblyReference.cache
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\obj\Debug\net6.0\Course.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\obj\Debug\net6.0\Course.Service.AssemblyInfoInputs.cache
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\obj\Debug\net6.0\Course.Service.AssemblyInfo.cs
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\obj\Debug\net6.0\Course.Service.csproj.CoreCompileInputs.cache
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\obj\Debug\net6.0\Course.Service.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\obj\Debug\net6.0\refint\Course.Service.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\obj\Debug\net6.0\Course.Service.pdb
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\obj\Debug\net6.0\ref\Course.Service.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\bin\Debug\net6.0\Course.Core.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\bin\Debug\net6.0\Course.Data.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\bin\Debug\net6.0\Course.Data.pdb
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\bin\Debug\net6.0\Course.Core.pdb
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Service\obj\Debug\net6.0\Course.Service.csproj.CopyComplete

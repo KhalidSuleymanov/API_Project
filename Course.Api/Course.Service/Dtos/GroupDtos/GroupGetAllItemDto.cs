@@ -1,4 +1,4 @@
-﻿namespace Course.Api.Dtos.GroupDtos
+﻿namespace Course.Service.Dtos.GroupDtos
 {
     public class GroupGetAllItemDto
     {

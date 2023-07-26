@@ -142,3 +142,9 @@ C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\C
 C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\obj\Debug\net6.0\Course.Api.genruntimeconfig.cache
 C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\obj\Debug\net6.0\ref\Course.Api.dll
 C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\obj\Debug\net6.0\Course.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\bin\Debug\net6.0\Course.Service.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\bin\Debug\net6.0\Course.Service.pdb
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\bin\Debug\net6.0\libman.json

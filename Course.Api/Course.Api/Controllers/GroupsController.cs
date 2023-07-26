@@ -1,6 +1,8 @@
-﻿using Course.Api.Dtos.GroupDtos;
-using Course.Core.Entities;
+﻿using Course.Core.Entities;
 using Course.Core.Repositories;
+using Course.Service.Dtos.GroupDtos;
+using Course.Service.Exceptions;
+using Course.Service.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,83 +12,64 @@ namespace Course.Api.Controllers
     [ApiController]
     public class GroupsController : ControllerBase
     {
-        private readonly IGroupRepository _groupRepository;
-        private readonly IStudentRepository _studentRepository;
-
-        public GroupsController(IGroupRepository groupRepository, IStudentRepository studentRepository)
+        private readonly IGroupService _groupService;
+        public GroupsController(IGroupService groupService)
         {
-            _groupRepository = groupRepository;
-            _studentRepository = studentRepository;
+            _groupService = groupService;
         }
-
         [HttpGet("all")]
         public ActionResult<List<GroupGetAllItemDto>> GetAll()
         {
-            var groupDtos = _groupRepository.GetQueryable(x => x.Students.Count > 0).Select(x => new GroupGetAllItemDto { Id = x.Id, Name = x.Name, }).ToList();
-            return Ok(groupDtos);
+            return Ok(_groupService.GetAll());
         }
-
         [HttpGet("{id}")]
         public ActionResult<GroupGetDto> Get(int id)
         {
-            Group group = _groupRepository.Get(b => b.Id == id);
-            if (group == null)
-            {
-                return NotFound();
-            }
-            GroupGetDto groupDto = new GroupGetDto
-            {
-                Name = group.Name,
-                StudentsCount = _studentRepository.GetQueryable(x => x.GroupId == id).Count(),
-            };
-            return Ok(groupDto);
+            return Ok(_groupService.GetById(id));
         }
-
         [HttpPost("")]
         public IActionResult Create(GroupCreateDto groupDto)
         {
-            if (_groupRepository.IsExist(x => x.Name == groupDto.Name))
+            try
             {
-                ModelState.AddModelError("Name", "Name is already taken");
+                var result = _groupService.Create(groupDto);
+                return StatusCode(201, result);
+            }
+            catch (EntityDublicateException e)
+            {
+                ModelState.AddModelError("Name", e.Message);
                 return BadRequest(ModelState);
             }
-            Group group = new Group
-            {
-                Name = groupDto.Name,
-            };
-            _groupRepository.Add(group);
-            _groupRepository.Commit();
-            return StatusCode(201, new { Id = group.Id });
         }
-
         [HttpPut("{id}")]
-        public IActionResult Edit(int id, GroupEditDto groupDto)
+        public IActionResult Edit(int id, GroupEditDto brandDto)
         {
-            Group group = _groupRepository.Get(x => x.Id == id);
-            if (group == null)
+            try
+            {
+                _groupService.Edit(id, brandDto);
+            }
+            catch (NotFoundException e)
             {
                 return NotFound();
             }
-            if (group.Name != groupDto.Name && _groupRepository.IsExist(x => x.Name == groupDto.Name))
+            catch (EntityDublicateException e)
             {
-                ModelState.AddModelError("Name", "Name is already taken");
+                ModelState.AddModelError("Name", e.Message);
                 return BadRequest(ModelState);
             }
-            group.Name = groupDto.Name;
-            _groupRepository.Commit();
             return NoContent();
         }
-
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            Group group = _groupRepository.Get(b => b.Id == id);
-            if (group == null)
+            try
+            {
+                _groupService.Remove(id);
+            }
+            catch (NotFoundException)
             {
                 return NotFound();
             }
-            _groupRepository.Remove(group);
-            _groupRepository.Commit();
             return NoContent();
         }
     }

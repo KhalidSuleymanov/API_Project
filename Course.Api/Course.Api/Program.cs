@@ -3,9 +3,11 @@ using FluentValidation.AspNetCore;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Writers;
-using Course.Api.Dtos.GroupDtos;
 using Course.Core.Repositories;
 using Course.Data.Repositories;
+using Course.Service.Dtos.GroupDtos;
+using Course.Service.Interfaces;
+using Course.Service.Implementations;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -19,6 +21,7 @@ builder.Services.AddDbContext<CourseDbContext>(opt =>
 
 builder.Services.AddScoped<IGroupRepository, GroupRepository>();
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<IGroupService, GroupService>();
 
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<GroupCreateDtoValidatior>();

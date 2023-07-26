@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Course.Api.Dtos.StudentDtos
+namespace Course.Service.Dtos.StudentDtos
 {
     public class StudentCreateDto
     {

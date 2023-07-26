@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using System.ComponentModel.DataAnnotations;
 
-namespace Course.Api.Dtos.GroupDtos
+namespace Course.Service.Dtos.GroupDtos
 {
     public class GroupCreateDto
     {

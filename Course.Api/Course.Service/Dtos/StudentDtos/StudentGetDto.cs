@@ -1,4 +1,4 @@
-﻿namespace Course.Api.Dtos.StudentDtos
+﻿namespace Course.Service.Dtos.StudentDtos
 {
     public class StudentGetDto
     {
