@@ -11,10 +11,12 @@ namespace Course.Api.Controllers
     public class GroupsController : ControllerBase
     {
         private readonly IGroupRepository _groupRepository;
+        private readonly IStudentRepository _studentRepository;
 
-        public GroupsController(IGroupRepository groupRepository)
+        public GroupsController(IGroupRepository groupRepository, IStudentRepository studentRepository)
         {
             _groupRepository = groupRepository;
+            _studentRepository = studentRepository;
         }
 
         [HttpGet("all")]
@@ -35,6 +37,7 @@ namespace Course.Api.Controllers
             GroupGetDto groupDto = new GroupGetDto
             {
                 Name = group.Name,
+                StudentsCount = _studentRepository.GetQueryable(x => x.GroupId == id).Count(),
             };
             return Ok(groupDto);
         }

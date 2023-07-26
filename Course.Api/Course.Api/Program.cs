@@ -18,6 +18,7 @@ builder.Services.AddDbContext<CourseDbContext>(opt =>
 });
 
 builder.Services.AddScoped<IGroupRepository, GroupRepository>();
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<GroupCreateDtoValidatior>();
