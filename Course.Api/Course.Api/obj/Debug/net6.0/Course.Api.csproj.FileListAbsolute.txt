@@ -148,3 +148,5 @@ C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\C
 C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\bin\Debug\net6.0\Course.Service.dll
 C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\bin\Debug\net6.0\Course.Service.pdb
 C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\bin\Debug\net6.0\libman.json
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Khalid Suleymanov\Desktop\API records\API-TASK\API_Project\Course.Api\Course.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
