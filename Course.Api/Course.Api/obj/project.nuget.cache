@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "z9x0qaGKD71dDBjhBVHSLPDV5s+99guJ2Wih4DtMGM07ofrbuCPR3BvzgynysOrKbitn8EcdCMVZa5+eSKeNZg==",
+  "dgSpecHash": "jb50gtJplTZj0lCVEif8L1nlxrdMCCGGybS8rkkB/LyiIZbMjQjCzrUQlio5Eq7sqt3zpSJT03XdAWU00AUPkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Khalid Suleymanov\\Desktop\\API records\\API-TASK\\API_Project\\Course.Api\\Course.Api\\Course.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Khalid Suleymanov\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\Khalid Suleymanov\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Khalid Suleymanov\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Khalid Suleymanov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Khalid Suleymanov\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Khalid Suleymanov\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
