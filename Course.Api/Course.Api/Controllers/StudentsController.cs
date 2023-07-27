@@ -2,11 +2,14 @@
 using Course.Core.Repositories;
 using Course.Service.Dtos.StudentDtos;
 using Course.Service.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace Course.Api.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class StudentsController : ControllerBase

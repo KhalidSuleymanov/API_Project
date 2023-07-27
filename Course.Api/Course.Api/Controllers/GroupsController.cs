@@ -3,11 +3,13 @@ using Course.Core.Repositories;
 using Course.Service.Dtos.GroupDtos;
 using Course.Service.Exceptions;
 using Course.Service.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Course.Api.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class GroupsController : ControllerBase

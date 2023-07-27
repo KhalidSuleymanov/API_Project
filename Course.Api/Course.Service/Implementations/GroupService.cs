@@ -5,11 +5,6 @@ using Course.Service.Dtos.Common;
 using Course.Service.Dtos.GroupDtos;
 using Course.Service.Exceptions;
 using Course.Service.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Course.Service.Implementations
 {
