@@ -15,5 +15,6 @@ namespace Course.Service.Interfaces
         List<StudentGetAllItemDto> GetAll();
         void Edit(int id, StudentEditDto dto);
         void Delete(int id);
+        PaginatedListDto<PaginatedListItemDto> GetAllPaginated(int page);
     }
 }

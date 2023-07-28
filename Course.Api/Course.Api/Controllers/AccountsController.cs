@@ -1,5 +1,7 @@
-﻿using Course.Core.Entities;
+﻿using Course.Api.Services;
+using Course.Core.Entities;
 using Course.Service.Dtos.AccountDtos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -16,11 +18,13 @@ namespace Course.Api.Controllers
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<AppUser> _userManager;
         private readonly IConfiguration _configuration;
-        public AccountsController(RoleManager<IdentityRole> roleManager, UserManager<AppUser> userManager, IConfiguration configuration)
+        private readonly JwtService _jwtService;
+        public AccountsController(RoleManager<IdentityRole> roleManager, UserManager<AppUser> userManager, IConfiguration configuration, JwtService jwtService)
         {
             _roleManager = roleManager;
             _userManager = userManager;
             _configuration = configuration;
+            _jwtService = jwtService;
         }
 
         //[HttpGet("createrole")]
@@ -52,32 +56,26 @@ namespace Course.Api.Controllers
             AppUser admin = await _userManager.FindByNameAsync(loginDto.UserName);
             if (admin == null)
             {
-                return NotFound();
+                return BadRequest();
             }
-            if(!await _userManager.CheckPasswordAsync(admin, loginDto.Password))
+            if (!await _userManager.CheckPasswordAsync(admin, loginDto.Password))
             {
-                return NotFound();
+                return BadRequest();
             }
-            List<Claim> claims = new List<Claim>
+            return Ok(new { token = await _jwtService.GenerateToken(admin) });
+        }
+        [Authorize]
+        [HttpGet("profile")]
+        public async Task<IActionResult> Profile()
+        {
+            AppUser user = await _userManager.FindByNameAsync(User.Identity.Name);
+            return Ok(new
             {
-                new Claim(ClaimTypes.NameIdentifier,admin.Id),
-                new Claim(ClaimTypes.Name,admin.UserName),
-                new Claim(ClaimTypes.Email,admin.Email),
-                new Claim("FullName",admin.FullName),
-            };
-            var roleClaims = (await _userManager.GetRolesAsync(admin)).Select(x => new Claim(ClaimTypes.Role, x)).ToList();
-            claims.AddRange(roleClaims);
-            var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(_configuration.GetSection("JWT:Secret").Value));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512);
-            var token = new JwtSecurityToken(
-                   signingCredentials: creds,
-                   claims: claims,
-                   expires: DateTime.UtcNow.AddDays(3),
-                   issuer: _configuration.GetSection("JWT:Issuer").Value,
-                   audience: _configuration.GetSection("JWT:Audience").Value
-                   );
-            var tokenStr = new JwtSecurityTokenHandler().WriteToken(token);
-            return Ok(new { token = tokenStr });
+                Id = user.Id,
+                Email = user.Email,
+                UserName = user.UserName,
+                FullName = user.FullName
+            });
         }
     }
 }

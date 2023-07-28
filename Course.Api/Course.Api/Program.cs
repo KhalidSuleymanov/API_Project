@@ -18,6 +18,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
+using Course.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<CourseDbContext>(opt =>
@@ -85,6 +86,8 @@ builder.Services.AddScoped<IStudentService, StudentService>();
 
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<GroupCreateDtoValidatior>();
+
+builder.Services.AddScoped<JwtService>();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 

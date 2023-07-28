@@ -1,5 +1,6 @@
 ﻿using Course.Core.Entities;
 using Course.Core.Repositories;
+using Course.Service.Dtos.Common;
 using Course.Service.Dtos.StudentDtos;
 using Course.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -35,6 +36,11 @@ namespace Course.Api.Controllers
         public ActionResult<List<StudentGetAllItemDto>> GetAll()
         {
             return Ok(_studentService.GetAll());
+        }
+        [HttpGet("")]
+        public ActionResult<PaginatedListDto<PaginatedListItemDto>> GetAll(int page = 1)
+        {
+            return Ok(_studentService.GetAllPaginated(page));
         }
         [HttpPut("{id}")]
         public IActionResult Edit(int id, StudentEditDto studentDto)

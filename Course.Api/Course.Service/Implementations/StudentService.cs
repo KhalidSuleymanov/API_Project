@@ -78,5 +78,16 @@ namespace Course.Service.Implementations
             _studentRepository.Remove(entity);
             _studentRepository.Commit();
         }
+        public PaginatedListDto<PaginatedListItemDto> GetAllPaginated(int page)
+        {
+            if (page < 1)
+            {
+                throw new RestException(System.Net.HttpStatusCode.BadRequest, "Page", "Page not found");
+            }
+            var query = _studentRepository.GetQueryable(x => true, "Group");
+            var entities = query.Skip((page - 1) * 3).Take(3).ToList();
+            var items = _mapper.Map<List<PaginatedListItemDto>>(entities);
+            return new PaginatedListDto<PaginatedListItemDto>(items, page, 3, query.Count());
+        }
     }
 }

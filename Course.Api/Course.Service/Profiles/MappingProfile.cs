@@ -21,6 +21,7 @@ namespace Course.Service.Profiles
             CreateMap<StudentCreateDto, Student>();
             CreateMap<Student, StudentGetDto>();
             CreateMap<Student, StudentGetAllItemDto>();
+            CreateMap<Student, PaginatedListItemDto>();
         }
     }
 }
