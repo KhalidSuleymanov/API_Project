@@ -19,6 +19,7 @@ using Microsoft.OpenApi.Models;
 using System.Reflection;
 using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
 using Course.Api.Services;
+using Course.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<CourseDbContext>(opt =>
@@ -44,15 +45,6 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "Ahop App API",
-        Version = "v1",
-        Description = "An API to perform e-commerse operations",
-    });
-    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-    c.IncludeXmlComments(xmlPath);
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
@@ -116,4 +108,5 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.Run();

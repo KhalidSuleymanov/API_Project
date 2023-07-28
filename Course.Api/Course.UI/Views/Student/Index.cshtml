@@ -1,0 +1,48 @@
+﻿@using Course.UI.ViewModel
+@model StudentsVM
+@{
+    ViewData["Title"] = "Index";
+    int dataOrder = 0;
+    string apiBaseUrl = "https://localhost:7124/";
+}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-8">
+            <div class="row justify-content-between align-items-center">
+                <h1>Students</h1>
+                <a class="btn btn-primary" asp-controller="student" asp-action="create">Create</a>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">FullName</th>
+                        <th scope="col">Point</th>
+                        <th scope="col">GroupName</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Students)
+                    {
+                        dataOrder++;
+                        <tr>
+                            <th scope="row">@dataOrder</th>
+                            <td>@item.FullName</td>
+                            <td>@item.Point</td>
+                            <td>@item.Group.Name</td>
+                            <td>
+                                <a asp-action="edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                                <a asp-action="delete" asp-route-id="@item.Id" class="btn btn-danger delete-btn">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
