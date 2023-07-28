@@ -5,32 +5,27 @@ namespace Course.UI.Controllers
 {
     public class GroupController : Controller
     {
-        private HttpClient _clinet;
+        private HttpClient _client;
         public GroupController()
         {
-            _clinet = new HttpClient();
-            _clinet.BaseAddress = new Uri("https://localhost:7124/api/");
+            _client = new HttpClient();
+            _client.BaseAddress = new Uri("https://localhost:7124/api/");
         }
-        public async Task<IActionResult> Index(List<int> tagIds, string search)
+        public async Task<IActionResult> Index()
         {
-            ViewBag.TagIds = tagIds;
-            ViewBag.Search = search;
-            using (HttpClient client = new HttpClient())
+            using (var response = await _client.GetAsync("https://localhost:7124/api/groups/all"))
             {
-                using (var response = await client.GetAsync("https://localhost:7124/api/groups/all"))
+                if (response.IsSuccessStatusCode)
                 {
-                    if (response.IsSuccessStatusCode)
+                    var content = await response.Content.ReadAsStringAsync();
+                    GroupViewModel vm = new GroupViewModel
                     {
-                        var content = await response.Content.ReadAsStringAsync();
-                        GroupViewModel vm = new GroupViewModel
-                        {
-                            Groups = JsonConvert.DeserializeObject<List<GroupViewModelItem>>(content)
-                        };
-                        return View(vm);
-                    }
+                        Groups = JsonConvert.DeserializeObject<List<GroupViewModelItem>>(content)
+                    };
+                    return View(vm);
                 }
             }
-            return View("error");
+            return View("Error");
         }
         public ActionResult Create()
         {
@@ -65,7 +60,7 @@ namespace Course.UI.Controllers
         }
         public async Task<IActionResult> Edit(int id)
         {
-            using (var response = await _clinet.GetAsync($"groups/{id}"))
+            using (var response = await _client.GetAsync($"groups/{id}"))
             {
                 if (response.IsSuccessStatusCode)
                 {
@@ -79,12 +74,9 @@ namespace Course.UI.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, GroupEditViewModel vm)
         {
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
+            if (!ModelState.IsValid) return View();
             var requestContent = new StringContent(JsonConvert.SerializeObject(vm), System.Text.Encoding.UTF8, "application/json");
-            using (var response = await _clinet.PutAsync($"groups/{id}", requestContent))
+            using (var response = await _client.PutAsync($"groups/{id}", requestContent))
             {
                 if (response.IsSuccessStatusCode)
                 {
@@ -99,6 +91,19 @@ namespace Course.UI.Controllers
                         ModelState.AddModelError(item.Key, item.ErrorMes);
                     }
                     return View();
+                }
+            }
+            return View("error");
+        }
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+
+            using (var response = await _client.DeleteAsync($"groups/{id}"))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("index");
                 }
             }
             return View("error");
